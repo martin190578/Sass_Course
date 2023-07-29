@@ -1,0 +1,39 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+
+//part 4 function sum min max
+
+@function sum($numbers...) {
+    $i: 0;
+
+    @each $x in $numbers {
+        $i: $i+$x;
+    }
+
+    @return
+     $i;
+
+}
+
+#demo {
+    background-color: blueviolet;
+    width: sum(100px, 50px, 50px);
+    height: sum(100px, 50px, 100px);
+}
+
+$mywidth: 150px, 100px, 40px;
+
+#demo {
+    background-color: blueviolet;
+    width: max($mywidth...);
+    height: max($mywidth...);
+}
+
+
+/*  function  */

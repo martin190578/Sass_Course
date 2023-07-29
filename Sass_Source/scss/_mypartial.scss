@@ -1,0 +1,49 @@
+
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+/* start vareable */
+$bgcscolor: red;
+$color-1: #2de72ddd;
+$colo-2: #0a0400dd;
+$color-3: #aba4ab;
+$footerColor: #33bedd;
+$btncolor: #fefafedd;
+$bgcbtn: #36b4e2ee;
+$fontweight: 700;
+$bordercolor: #4c4c4cee;
+$pos1: relative;
+$pos2: absolute;
+$margin1: 80px;
+$padd: 40px;
+$font-family: Fira Code;
+$l-heghte: 29px;
+$pad-btn: 13px;
+
+/* start vareable */
+
+/* 
+The CSS @import directive has a major drawback due to performance issues;
+it creates an extra HTTP request each time you call it. However,
+the Sass @import directive includes the file in the CSS;
+so no extra HTTP call is required at runtime ! Sass Import Syntax:
+
+
+*/
+/* 
+Example :
+page: style.scss
+
+_mypartial.scss
+@import "variables";
+@import "colors";
+@import "reset";
+
+You can import as many files as you need in the main file
+
+*/

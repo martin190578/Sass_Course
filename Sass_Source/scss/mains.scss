@@ -1,0 +1,43 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+/* 
+The @mixin directive lets you create CSS code that is to be reused throughout the website. The @include directive is created to let you use (include) the mixin.
+*/
+@import "mypartial";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+margin: $margin1;
+    background-color:$color-1;
+    color:$colo-2 ;
+    padding: $padd;
+    font-family: $font-family;
+}
+h1{
+    color:$color-1 ;
+    border:4px groove $bordercolor ;
+}
+p{
+    background-color: $footerColor;
+    line-height: $l-heghte;
+    font-family: $font-family;
+}
+button{
+    background-color: $footerColor;
+    color: white;
+    padding: $pad-btn;
+    border-radius: 8px;;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

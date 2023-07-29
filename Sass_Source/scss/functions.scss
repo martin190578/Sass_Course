@@ -1,0 +1,41 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+@import "scss/bass";
+
+body {
+    margin: $body-margin;
+}
+
+
+/*  function  */
+$myWidth-first-one: 10px;
+$myWidth-first-tow: 10px;
+
+@function base-width($n){
+@return $n+$margin-first-w;
+}
+.container-as{
+    margin-top:base-width(200px);
+    padding: base-width(130px);
+}
+
+
+@function base-width($n) {
+    @return $n*$myWidth-first-one+($n - 1)*$myWidth-first-tow;
+}
+
+img {
+    margin-left: base-width(10);
+}
+
+
+
+
+
+/*  function  */

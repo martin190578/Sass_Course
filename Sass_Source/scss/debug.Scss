@@ -1,0 +1,43 @@
+/* 
+Sometimes it’s useful to see the value of a variable or expression while you’re developing your stylesheet. That’s what the @debug rule is for: it’s written @debug <expression>,
+and it prints the value of that expression,
+along with the filename and line number.
+
+*/
+
+
+$primary-color: #ff3a3a;
+
+@debug $primary-color;
+
+
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+@function multiPlus($x, $z) {
+    $result: "";
+    $result: $x*$z;
+    @return $result;
+}
+
+@debug multiPlus(10, 5);
+
+
+
+
+
+
+@mixin inset-divider-offset($offset, $padding) {
+    $divider-offset: (2 * $padding)+$offset;
+    @debug "divider offset: #{$divider-offset}";
+
+    margin-left: $divider-offset;
+    width: calc(100% - #{$divider-offset});
+}
+//debug.scss:3 Debug: divider offset: 132px
+
+

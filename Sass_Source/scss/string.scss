@@ -1,0 +1,49 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+
+
+
+
+/* 
+Sass String Functions The string functions are used to manipulate and get information about strings. Sass strings are 1-based. The first character in a string is at index 1,
+not 0. The following table lists all string functions in Sass:
+*/
+
+
+
+
+
+
+
+//Returns the index of the first occurrence of the substring within string.
+@debug str-index($string: "hello user", $substring: "u");
+//Returns string with insert inserted at the specified index position.
+@debug str-insert("hello ", " user", 6);
+//Returns the length of string (in characters).
+$txt: str-length($string: "well com user my class room");
+
+@if(str-length($string: "well com user my class room")>10) {
+    @debug $txt;
+}
+//Returns a copy of string converted to lower case.
+$txt: to-lower-case("HELLO USER WELL COM");
+
+h1::before {
+    content: $txt;
+}
+//Returns a copy of string converted to upper case.
+$txt-2: to-upper-case("hello user well com");
+
+h2::before {
+    content: $txt-2;
+}
+/* 
+    	Returns a unique randomly generated unquoted string (guaranteed to be unique within the current sass session).
+ */
+@debug unique-id();

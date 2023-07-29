@@ -1,0 +1,162 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+@import "scss/bassStyle/bass";
+
+
+body{
+    background-color:$gray;
+    color: $base-color;
+    margin: $body-margin;
+}
+/* menu Style */
+menu{
+padding:$btn-padding;
+        nav{
+            text-align: $txt-center;
+            background-color: $base-color;
+            ul{
+                text-decoration: none;
+               
+                li{
+                    padding:$li-padding;
+                    display: $d-in-block;
+                    
+                    a{
+                        text-decoration: none;
+                        color:$light-color;
+                        font-weight: $font-wight;
+                        padding: $li-padding;
+
+                        &:hover{
+                            color:white;
+                            background-color:$bgc-hover;
+                            text-decoration: underline red;
+                        }
+                        &:visited{
+                        color: #e11eef;
+                            
+                        }
+                    }
+
+                }
+            }
+        }
+
+}
+/* End menu Style */
+/* Section-style */
+section.contaner{
+background-color:yellow ;
+color: $gray;
+padding: $btn-padding;
+h2{
+    font-size: $h1-font-size;
+    font-weight: $font-wight;
+    background-color: $btn-bgcolor;
+    text-align: $txt-center;
+
+}
+img{
+    transform: skew(-9deg);
+    -webkit-transform: skew(-9deg);
+    -moz-transform: skew(-9deg);
+    -ms-transform: skew(-9deg);
+    -o-transform: skew(-9deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+& .item-1{
+background-color: #eb6c12;
+}
+
+& .item-2{
+    background-color: #e11eef;
+}
+& .item-3{
+    background-color: #42eff2;
+}
+
+}
+/* End Section-style */
+
+/* base style input */
+
+%base-input{
+     padding: 16px 16px;
+      margin:$body-margin ;
+       border:3px groove #906b6b ;
+       border-radius:$borde-redus; -webkit-border-radius:$borde-redus; -moz-border-radius:$borde-redus; -ms-border-radius:$borde-redus; -o-border-radius:$borde-redus;
+}
+
+.input-group{
+background-color: #36fd50;
+& .input-item1{
+    @extend %base-input;
+    background-color: #e1e1e1;
+    &:focus{
+        border:#e11eef;
+        border-bottom: 4px solid yellow;
+    }
+    &::placeholder{
+        font-size: 19px;
+        font-family: Fira Code;
+    } 
+}
+& .input-item2{
+    @extend %base-input;
+    background-color: #e1e1e1;
+    &:focus{
+        border:#e11eef;
+        border-bottom: 4px solid yellow;
+    }
+    &::placeholder{
+        font-size: 19px;
+        font-family: Fira Code;
+    } 
+}
+& .input-item3{
+    @extend %base-input;
+    background-color: #e1e1e1;
+    &:focus{
+        border:#e11eef;
+        border-bottom: 4px solid yellow;
+    }
+    &::placeholder{
+        font-size: 19px;
+        font-family: Fira Code;
+    } 
+    &:required{
+        padding-right: 18px;
+        border: 6px solid red;
+    }
+}
+
+}
+/* End style input */
+
+%baseBtn{
+    background-color:$btn-bgcolor;
+    color: $light-color;
+    font-size: 21px;
+    padding: $btn-padding;
+    margin: $input-margin;
+}
+.input-group{
+    button{
+        @extend%baseBtn;
+        border-radius:12px ;
+        -webkit-border-radius:12px ;
+        -moz-border-radius:12px ;
+        -ms-border-radius:12px ;
+        -o-border-radius:12px ;
+}
+}

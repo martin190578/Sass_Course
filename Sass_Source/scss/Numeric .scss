@@ -1,0 +1,32 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+
+
+/* 
+Sass Numeric Functions
+The numeric functions are used to manipulate numeric values.
+
+The following table lists all numeric functions in Sass:
+
+*/
+
+
+@debug str-slice("how are you",4,6);
+@debug abs($number:32);//Returns the absolute value of number.
+@debug ceil($number: 12);//Rounds number up to the nearest integer.
+@debug comparable(2px,3em);//Returns whether num1 and num2 are comparable.
+@debug floor($number: 6.3);//Rounds number down to the nearest integer.
+@debug min(10,20,3,50,100);//	Returns the lowest value of several numbers.
+@debug max(10, 20, 3, 50, 100) ;//Returns the highest value of several numbers.
+ @debug random(6);//  Returns a random integer between 1 and number.
+$num:random(6);
+@if($num==6){
+    @debug "#{$num}+You Are Win ...!"
+}
+ @debug round($number: 16.4); //Rounds number to the nearest integer.

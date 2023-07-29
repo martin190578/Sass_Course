@@ -1,0 +1,115 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+
+/* btn variable style */
+$width: 4px;
+$b-color: #ec80ff;
+$bgc-color: #46a8c9;
+$color: white;
+$pad-btn: 8px 8px;
+$marg-btn: 40px 10px;
+$font-weight-1: 600;
+$font-weight-2: 900;
+$font-size: 1.5rem;
+/*End btn variable style */
+
+/* btn variable hover */
+$b-color-hover: #ffffff;
+$bgc-color-hover: #175367;
+$color-hover: #fff702;
+$pad-btn-hover: 14px 10px;
+$marg-btn-hover: 80px 20px;
+$font-weight-1: 600;
+$font-weight-2: 900;
+$font-size-hover: 2rem;
+$p-color:#2d2d2d;
+/* btn variable hover */
+
+body {
+    margin: 40px;
+}
+
+
+/* 
+The @mixin directive lets you create CSS code that is to be reused throughout the website. The @include directive is created to let you use (include) the mixin.
+*/
+
+
+@mixin btn-style {
+    background-color: $bgc-color ;
+    color: $color;
+    border: $width groove $b-color;
+    padding: $pad-btn;
+    font-weight: $font-weight-1;
+    margin: $marg-btn;
+    font-size: $font-size;
+}
+
+@mixin btn-style-hover {
+    background-color: $bgc-color-hover ;
+    color: $color-hover;
+    border: none;
+    border-bottom: $width groove red;
+    padding: $pad-btn-hover;
+    font-weight: $font-weight-2;
+    margin: $marg-btn-hover;
+    font-size: $font-size-hover;
+    font-family: Fira Code;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+.btn-primery {
+    @include btn-style;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+
+    &:hover {
+        @include btn-style-hover;
+    }
+}
+
+@mixin myBorder_style($myWidth, $myColor) {
+    border: $myWidth groove $myColor;
+}
+
+.box {
+    @include myBorder_style(5px, #49ec7a);
+    width: 200px;
+    height: 200px;
+    background-color: #e1adff;
+    margin-bottom: 40px;
+}
+
+@mixin text-p($p-color) {
+    color: $p-color;
+}
+
+p {
+
+    @include text-p(#2a8fa8)
+}
+
+@mixin My-img($img-W, $img-h) {
+    width: $img-W;
+    height: $img-h ;
+}
+
+img {
+    @include My-img(260px, 260px)
+}
+
+
+/* End Mixin */

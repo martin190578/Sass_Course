@@ -1,0 +1,41 @@
+/* 
+***************
+Education Sass 👨🏽‍⚖️ with SourceCode 😉
+ developer : Ahmad hadizadeh 
+ website  Https://Asancode.com
+ 
+***************
+
+*/
+
+
+$colorbtn:blue;
+$myfont:20px;
+$mylinheghte:29px;
+$marginbody:90px;
+$mybgc:yellow;
+$bgcbody:#b6b3b3;
+$myborder:3px solid red;
+$paddbutton:26px;
+
+body{
+    margin:$marginbody ;
+    background-color: $bgcbody;
+    
+}
+h1{
+    background-color: $mybgc;
+    border: $myborder;
+
+}
+p{
+    line-height: $mylinheghte;
+    border: $myborder;
+    color:$colorbtn;
+    font-size:$myfont;
+    margin:$marginbody;
+}
+button{
+    padding:$paddbutton ;
+    background-color: $colorbtn;
+}

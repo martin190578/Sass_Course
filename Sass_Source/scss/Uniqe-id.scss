@@ -1,0 +1,54 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+
+@import "scss/bass";
+body{
+    margin: $body-margin;
+}
+
+
+
+@mixin inline-animation($duration){
+
+    /* Create uni-name with function unique-id() */
+    $name:inline-#{unique-id()};
+
+    @keyframes #{$name} {
+    @content;
+    }
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+}
+%parent{
+    width: 200px;
+    height: 200px;
+}
+.parent-1{
+    @extend %parent;
+}
+.parent-1{
+    @include inline-animation(3s){
+        from{background-color: blue;}
+        to{background-color: yellow;}
+    }
+}
+
+.parent-2{
+position: absolute;
+@extend %parent;
+    @include inline-animation(5s){
+        0%{background-color: #93d848;top:30;left:30;}
+        25%{background-color: #f09898;top:40;left:70;}
+        50%{background-color: #0a30ac;top:60;left:80;}
+        100%{background-color: #712585;top:80;left:100;}
+       
+    }
+}

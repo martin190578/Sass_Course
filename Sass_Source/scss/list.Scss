@@ -1,0 +1,59 @@
+/*
+*************** 
+Education Sass 👨🏽‍⚖️ with SourceCode 😉 
+developer : Ahmad hadizadeh website 
+Https: //Asancode.com
+*************** 
+*/
+
+
+/*
+The list functions are used to access values in a list,
+combine lists,
+and add items to lists. Sass lists are immutable (they cannot change). So,
+the list functions that return a list,
+will return a new list,
+and not change the original list. Sass lists are 1-based. The first list item in a list is at index 1,
+not 0. The following table lists all list functions in Sass: 
+ */
+
+
+$list1: "A", "B", "C", "B", "D";
+$list2: 1, 2, 3, 4, 5, 6;
+
+
+/* 
+Adds a single value to the end of the list. separator can be auto,
+comma,
+or space. auto is default.
+*/
+@debug append($list1 , "E");
+
+@debug append($list1 , ($list2), space);
+//Returns the index position for the value in list.
+@debug index($list1, to-upper-case("a"));
+//Checks whether the list has square brackets.
+@debug is-bracketed(1234);
+//Returns the length of the list.
+@debug length($list1);
+
+/* 
+Returns the list separator used,
+as a string. Can be either space or comma.
+*/
+
+@debug list-separator($list1);
+
+/* 
+Appends list2 to the end of list1. separator can be auto,
+comma,
+or space. auto is default (will use the separator in the first list). bracketed can be auto,
+true,
+or false. auto is default.
+*/
+@debug join($list1, $list2, space, $bracketed: true);
+//Sets the nth list element to the value specified.
+@debug set-nth($list1, 4, "AHMAD");
+
+//Combines lists into a single multidimensional list.
+@debug zip(10px 20px 30px, solid groove, dashed, #3d3d3d, #00ffff, #ff0000);

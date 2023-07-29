@@ -1,0 +1,18 @@
+body {
+  margin: 90px;
+  background-color: #b6b3b3; }
+
+h1 {
+  background-color: yellow;
+  border: 3px solid red; }
+
+p {
+  line-height: 29px;
+  border: 3px solid red;
+  color: blue;
+  font-size: 20px;
+  margin: 90px; }
+
+button {
+  padding: 26px;
+  background-color: blue; }
