@@ -78,12 +78,12 @@
 
 ### و node را دانلود و نصب کنید
 
-### وارد حط فرمان ** Vscode ** بشوید
+### وارد حط فرمان **Vscode** بشوید
 
 #### دستورات زیر را به ترتیب تایپ کنید
 
-### npm -v
-
+- npm -v
+- npm init
 - npm install -g sass
 - sass --version
 - برای کامپایل : npm run sass
